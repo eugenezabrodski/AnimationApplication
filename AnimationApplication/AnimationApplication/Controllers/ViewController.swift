@@ -52,12 +52,12 @@ class ViewController: UIViewController {
         curveTF.text = springView.curve
         
         springView.force = CGFloat.random(in: 0...2)
-        forceTF.text = springView.force.description
+        forceTF.text = String(format: "%.2f", springView.force)
         
         springView.duration = CGFloat.random(in: 0...2)
-        durationTF.text = springView.duration.description
+        durationTF.text = String(format: "%.2f", springView.duration)
         
-        springView.delay = CGFloat.random(in: 0...2)
-        delayTF.text = springView.delay.description
+        springView.delay = CGFloat.random(in: 1...4)
+        delayTF.text = String(format: "%.2f", springView.delay)
     }
 }
